@@ -26,16 +26,16 @@ async function SingleProduct({ id }: Props) {
       </div>
       <Separator />
       <section className="flex flex-col md:flex-row  mx-auto md:space-x-10 mt-4">
-        <div className="w-full md:w-2/4 md:h-48 h-full lg:block">
+        <div className="w-full md:w-2/4 md:h-[450px] h-full lg:block">
           <Image
             src={product.image}
             width={500}
-            height={350}
+            height={450}
             alt="product img"
-            className="w-full max-h-[350px] object-cover rounded-sm"
+            className="w-full h-[450px] object-cover rounded-sm"
           />
         </div>
-        <div className="w-full md:w-2/4 md:h-[350px] flex flex-col justify-between text-sm md:text-base h-full sm:mt-4 md:mt-0">
+        <div className="w-full md:w-2/4 md:h-[450px] flex flex-col justify-between text-sm md:text-base h-full sm:mt-4 md:mt-0">
           <div className="flex items-center -mt-2">
             <p className="font-semi-bold tracking-[1px] text-xl uppercase">
               {product.name}
