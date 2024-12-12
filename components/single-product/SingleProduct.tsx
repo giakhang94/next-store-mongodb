@@ -40,7 +40,7 @@ async function SingleProduct({ id }: Props) {
             <p className="font-semi-bold tracking-[1px] text-xl uppercase">
               {product.name}
             </p>
-            <div className="flex items-center mx-2 gap-x-2">
+            <div className="flex items-center mx-2 gap-x-3">
               <FavoriteToggleBtn productId={product.id} className="" />
               <ShareButton productId={product.id} name={product.name} />
             </div>
